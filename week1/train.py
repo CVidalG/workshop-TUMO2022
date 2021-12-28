@@ -5,7 +5,9 @@ from numpy import asarray
 from mrcnn.utils import Dataset
 from mrcnn.config import Config
 from mrcnn.model import MaskRCNN
- 
+
+Image.MAX_IMAGE_PIXELS = 20000 ** 2
+
 # class that defines and loads the tablebank dataset
 class TableBankDataset(Dataset):
 	# load the dataset definitions
@@ -89,7 +91,7 @@ class TableBankConfig(Config):
 	# number of classes (background + kangaroo)
 	NUM_CLASSES = 1 + 1
 	GPU_COUNT = 1
-	IMAGES_PER_GPU = 1
+	IMAGES_PER_GPU = 4
 	# number of training steps per epoch
 	# <- MODIFY -> Replace 178 with the number of images of your dataset
 	STEPS_PER_EPOCH = 66 // (GPU_COUNT * IMAGES_PER_GPU)
