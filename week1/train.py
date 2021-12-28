@@ -106,7 +106,7 @@ config.display()
 # define the model
 model = MaskRCNN(mode='training', model_dir='./', config=config)
 # load weights (mscoco) and exclude the output layers
-model.load_weights('mask_rcnn_tablebank_cfg_0002.h5', by_name=True, exclude=["mrcnn_class_logits", "mrcnn_bbox_fc",  "mrcnn_bbox", "mrcnn_mask"])
+model.load_weights('pre-trained/' + 'mask_rcnn_tablebank_cfg_0002.h5', by_name=True, exclude=["mrcnn_class_logits", "mrcnn_bbox_fc",  "mrcnn_bbox", "mrcnn_mask"])
 # train weights (output layers or 'heads')
 model.train(train_set, None, learning_rate=config.LEARNING_RATE, epochs=2, layers='heads')
 # unfreeze the body of the network and train *all* layers
