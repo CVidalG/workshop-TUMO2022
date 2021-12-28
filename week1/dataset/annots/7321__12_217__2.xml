@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>test-tumo</folder>
+	<filename>7321__12_217__2.jpeg</filename>
+	<path>/Users/chahanvidal-gorene/Documents/encours/temporaire/test-tumo/7321__12_217__2.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>13019</width>
+		<height>18915</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1684</xmin>
+			<ymin>11745</ymin>
+			<xmax>3334</xmax>
+			<ymax>14170</ymax>
+		</bndbox>
+	</object>
+</annotation>
