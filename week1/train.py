@@ -11,7 +11,7 @@ class TableBankDataset(Dataset):
 	# load the dataset definitions
 	def load_dataset(self, dataset_dir, is_train=True):
 		# define one class
-		self.add_class("dataset", 1, "table")
+		self.add_class("dataset", 1, "person")
 		# define data locations
 		images_dir = dataset_dir + '/images/'
 		annotations_dir = dataset_dir + '/annots/'
@@ -92,7 +92,7 @@ class TableBankConfig(Config):
 	IMAGES_PER_GPU = 1
 	# number of training steps per epoch
 	# <- MODIFY -> Replace 178 with the number of images of your dataset
-	STEPS_PER_EPOCH = 33 // (GPU_COUNT * IMAGES_PER_GPU)
+	STEPS_PER_EPOCH = 66 // (GPU_COUNT * IMAGES_PER_GPU)
  
 # prepare train set
 train_set = TableBankDataset()
