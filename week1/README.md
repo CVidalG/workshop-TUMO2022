@@ -5,7 +5,7 @@
 Requires [Conda](https://docs.conda.io/en/latest/miniconda.html)
 
 ```bash
-conda create --name TUMO-newspaper python==3.6
+conda create --name TUMO-newspaper python=3.6
 conda activate TUMO-newspaper
 ```
 
