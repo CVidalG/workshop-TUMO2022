@@ -5,6 +5,7 @@ from numpy import asarray
 from mrcnn.utils import Dataset
 from mrcnn.config import Config
 from mrcnn.model import MaskRCNN
+from PIL import Image, ImageDraw
 
 Image.MAX_IMAGE_PIXELS = 20000 ** 2
 
