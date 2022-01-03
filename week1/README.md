@@ -20,12 +20,6 @@ pip install -r requirements.txt
 python3 setup.py install
 ```
 
-### Install JupyterLab
-
-```bash
-conda install -c conda-forge jupyterlab
-```
-
 ## Create data
 
 ## Training
@@ -33,4 +27,21 @@ conda install -c conda-forge jupyterlab
 ```bash
 cd samples/newspapers
 python3 newspapers.py --dataset=/path/to/dataset --weights=coco
+```
+
+## Visualization
+
+Create a new environment
+
+```bash
+conda create --name TUMO python=3.8
+conda install -c conda-forge jupyterlab
+pip install nbconvert==5.6.1
+conda install matplotlib
+```
+
+and launch :
+
+```
+Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_data.ipynb
 ```
