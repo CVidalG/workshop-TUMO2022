@@ -10,7 +10,7 @@ git clone https://github.com/CVidalG/workshop-TUMO2022.git
 cd week1
 ```
 
-### Create a environment and install Mask-RCNN
+### Create an environment and install Mask-RCNN
 
 ```bash
 conda create --name TUMO-train python=3.6
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 python3 setup.py install
 ```
 
-## Create data
+## Building a custom dataset
 
 The first step consists in building a dataset of persons in Newspapers.
 
@@ -33,6 +33,8 @@ In particular, we will use the [Periodicals collection](https://arar.sci.am/dlib
 
 For annotating our dataset, we will use our [annotator tool vX.X](../annotator).
 
+<img src="../assets/annotation.gif" style="width: 30%;" alt="annotation process" class="inline"/>
+
 
 ## Training
 
@@ -41,7 +43,7 @@ cd samples/newspapers
 python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
 ```
 
-## Visualization of the Dataset
+## Data Visualization
 
 Create a new environment
 
