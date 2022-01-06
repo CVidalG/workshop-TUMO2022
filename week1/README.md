@@ -33,7 +33,7 @@ In particular, we will use the [Periodicals collection](https://arar.sci.am/dlib
 
 For annotating our dataset, we will use our [annotator tool vX.X](../annotator).
 
-<img src="../assets/annotation.gif" style="width: 30%;" alt="annotation process" class="inline"/>
+<img src="../assets/annotation.gif" style="width: 80%;" alt="annotation process" class="inline"/>
 
 
 ## Training
