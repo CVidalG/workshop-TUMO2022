@@ -38,7 +38,7 @@ For annotating our dataset, we will use our [annotator tool vX.X](../annotator).
 
 ```bash
 cd samples/newspapers
-python3 newspapers.py --dataset=/path/to/dataset --weights=coco
+python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
 ```
 
 ## Visualization of the Dataset
