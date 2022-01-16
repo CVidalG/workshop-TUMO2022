@@ -33,13 +33,19 @@ In particular, we will use the [Periodicals collection](https://arar.sci.am/dlib
 You have to choose ~ 50 PDF from different sources / dates / names (up to 300 pages)
 ```
 
-* Step 2 : convert pdf into images, with a max-height of 1000px
+* Step 2 : convert pdf into images
 
 ```
 You can use Automator to create a converter pdf2jpg, or you can also install the python library imagemagick.
 ```
 
-* Step 3 : data annotation
+* Step 3 : Set a max-height of 1000px for all the images
+
+```
+You can use Automator to create a converter img2img, or you can also use imagemagick.
+```
+
+* Step 4 : Annotate your data
 
 For annotating our dataset, we will use our [annotator tool v1.0.6](../annotator).
 
