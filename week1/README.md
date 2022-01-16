@@ -28,10 +28,20 @@ We will use data from the [Fundamental Scientific Library of the National Academ
 In particular, we will use the [Periodicals collection](https://arar.sci.am/dlibra/results?q=&action=SimpleSearchAction&type=-6&p=0&qf1=collections:10) of the ARAR Pan-Armenian Digital Library they have released.
 
 * Step 1 : download some pdf from ARAR
+
+```
+You have to choose ~ 50 PDF from different sources / dates / names (up to 300 pages)
+```
+
 * Step 2 : convert pdf into images, with a max-height of 1000px
+
+```
+You can use Automator to create a converter pdf2jpg, or you can also install the python library imagemagick.
+```
+
 * Step 3 : data annotation
 
-For annotating our dataset, we will use our [annotator tool vX.X](../annotator).
+For annotating our dataset, we will use our [annotator tool v1.0.6](../annotator).
 
 <img src="../assets/annotation.gif" style="width: 80%;" alt="annotation process" class="inline"/>
 
