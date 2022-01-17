@@ -50,12 +50,14 @@ You can use Automator to create a converter pdf2jpg, or you can also install the
 You can use Automator to create a converter img2img, or you can also use imagemagick.
 ```
 
-* Step 4 : Annotate your data
+* Step 4 : Split your images into three folders : train (with approximately 70% of your dataset), val (20%) and test (10%)
 
-For annotating our dataset, we will use our [annotator tool v1.0.6](../annotator).
+* Step 5 : Annotate your data
+
+For annotating your dataset, we will use our [annotator tool v1.0.6](../annotator).
+Please annotate each subset independently.
 
 <img src="../assets/annotation.gif" style="width: 80%;" alt="annotation process" class="inline"/>
-
 
 ## Training
 
