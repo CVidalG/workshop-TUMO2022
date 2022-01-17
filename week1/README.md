@@ -17,6 +17,11 @@ conda create --name TUMO-train python=3.6
 conda activate TUMO-train
 cd Mask-RCNN-TF2-3.0
 pip install -r requirements.txt
+
+# If error try : 
+xcode-select --install
+# Else continue
+
 python3 setup.py install
 ```
 
