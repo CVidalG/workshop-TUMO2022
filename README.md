@@ -13,7 +13,3 @@ This Git contains main code and tasks for the TUMO workshop "Analyzing Armenian 
 Full instructions: see [week 1](week1/README.md).
 
 In partnership with the [Fundamental Scientific Library of the National Academy of Sciences of the Republic of Armenia](https://www.flib.sci.am/index.php/en/knowledge/).
-
-## Week 2: Armenian characters Recognition in street views
-
-To come
