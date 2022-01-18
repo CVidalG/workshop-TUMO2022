@@ -1,6 +1,20 @@
 # Week 1 of the workshop
 
-## Installation
+# Table of contents
+
+1. [Installation](#installation)
+
+2. [Building a custom dataset](#dataset)
+
+3. [Understand the impact of hyper-parameters](#parameters)
+
+4. [Training](#training)
+
+5. [Data Visualization](#visualization)
+
+6. [Prediction](#prediction)
+
+## Installation<a name="installation"></a>
 
 ### Clone repository and go to the week 1
 
@@ -25,7 +39,7 @@ xcode-select --install
 python3 setup.py install
 ```
 
-## Building a custom dataset
+## Building a custom dataset<a name="dataset"></a>
 
 The first step consists in building a dataset of persons in Newspapers.
 
@@ -59,14 +73,31 @@ Please annotate each subset independently.
 
 <img src="../assets/annotation.gif" style="width: 80%;" alt="annotation process" class="inline"/>
 
-## Training
+## Understand the impact of hyper-parameters<a name="parameters"></a>
+
+The goal is to discover parameters you can use to control and optimize the learning.
+* Learning rate
+* Batch size
+* Dataset size
+* Number of layers
+* Number of hidden layers
+* Number of epochs
+
+Challenge **level 1** : [Access to the challenge](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=gauss&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=&seed=0.77737&showTestData=false&discretize=false&percTrainData=50&x=false&y=false&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
+
+Challenge **level 2** : [Access to the challenge](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=&seed=0.65267&showTestData=false&discretize=false&percTrainData=50&x=false&y=false&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
+
+Challenge **level 3** : [Access to the challenge](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=xor&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=&seed=0.38987&showTestData=false&discretize=false&percTrainData=50&x=false&y=false&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
+
+
+## Training<a name="training"></a>
 
 ```bash
 cd samples/newspapers
 python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
 ```
 
-## Data Visualization
+## Data Visualization<a name="visualization"></a>
 
 Create a new environment
 
@@ -90,7 +121,7 @@ and launch :
 Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_data.ipynb
 ```
 
-## Prediction
+## Prediction<a name="prediction"></a>
 
 We are in the ```week1``` folder.
 
