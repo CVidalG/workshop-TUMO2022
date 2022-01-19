@@ -118,7 +118,7 @@ jupyter notebook
 and launch :
 
 ```
-Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_data.ipynb
+Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_data-student.ipynb
 ```
 
 ## Prediction<a name="prediction"></a>
