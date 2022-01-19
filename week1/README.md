@@ -92,14 +92,16 @@ Challenge **level 3** : [Access to the challenge](http://playground.tensorflow.o
 
 ## Data Visualization<a name="visualization"></a>
 
-Create a new environment
+We are in the ```week1``` folder.
 
 ```bash
-conda create --name TUMO-viz python=3.8
-conda activate TUMO-viz
+conda create --name TUMO-pred python=3.7
+conda activate TUMO-pred
+pip install -r requirements.txt
+python3 setup.py install
+python -m pip install Keras==2.3.1 tensorflow==2.1.0
+pip install scikit-image==0.14.2
 conda install -c conda-forge jupyterlab
-pip install nbconvert==5.6.1
-conda install matplotlib numpy
 ```
 
 Start a JupyterNotebook:
@@ -125,16 +127,8 @@ python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
 
 ## Prediction<a name="prediction"></a>
 
-We are in the ```week1``` folder.
-
-```bash
-conda create --name TUMO-pred python=3.7
-conda activate TUMO-pred
-pip install -r requirements.txt
-python3 setup.py install
-python -m pip install Keras==2.3.1 tensorflow==2.1.0
-pip install scikit-image==0.14.2
-conda install -c conda-forge jupyterlab
+```
+activate your TUMO-pred environment
 ```
 
 Start a JupyterNotebook:
