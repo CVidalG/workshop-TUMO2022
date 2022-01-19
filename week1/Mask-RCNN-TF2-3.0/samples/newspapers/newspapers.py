@@ -87,7 +87,7 @@ class NewspaperDataset(utils.Dataset):
         subset: Subset to load: train or val
         """
         # Add classes. We have only one class to add.
-        self.add_class("newspaper", 1, "newspaper")
+        self.add_class("newspaper", 1, "people")
 
         # Train or validation dataset?
         assert subset in ["train", "val"]
