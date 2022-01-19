@@ -8,9 +8,9 @@
 
 3. [Understand the impact of hyper-parameters](#parameters)
 
-4. [Training](#training)
+4. [Data Visualization](#visualization)
 
-5. [Data Visualization](#visualization)
+5. [Training](#training)
 
 6. [Prediction](#prediction)
 
