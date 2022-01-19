@@ -90,13 +90,6 @@ Challenge **level 2** : [Access to the challenge](http://playground.tensorflow.o
 Challenge **level 3** : [Access to the challenge](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=xor&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=&seed=0.38987&showTestData=false&discretize=false&percTrainData=50&x=false&y=false&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
 
 
-## Training<a name="training"></a>
-
-```bash
-cd samples/newspapers
-python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
-```
-
 ## Data Visualization<a name="visualization"></a>
 
 Create a new environment
@@ -120,6 +113,15 @@ and launch :
 ```
 Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_data-student.ipynb
 ```
+
+
+## Training<a name="training"></a>
+
+```bash
+cd samples/newspapers
+python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
+```
+
 
 ## Prediction<a name="prediction"></a>
 
