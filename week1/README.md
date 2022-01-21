@@ -92,7 +92,7 @@ Challenge **level 3** : [Access to the challenge](http://playground.tensorflow.o
 
 ## Data Visualization<a name="visualization"></a>
 
-We are in the ```week1``` folder.
+We are in the ```week1/Mask-RCNN-TF2-3.0``` folder.
 
 ```bash
 conda create --name TUMO-pred python=3.7
@@ -120,7 +120,7 @@ Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_data-student.ipynb
 ## Training<a name="training"></a>
 
 ```bash
-cd samples/newspapers
+cd week1/Mask-RCNN-TF2-3.0/samples/newspapers
 python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
 ```
 
