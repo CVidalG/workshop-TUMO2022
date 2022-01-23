@@ -10,7 +10,7 @@
 ## Task 1: Introduction to a multi-class problem
 
 <p align="center">
-<img src="assets/lesson-general-support-week2.jpg" width="80%"/>
+<img src="assets/lesson-general-support-week2.jpeg" width="80%"/>
 </p>
 
 
