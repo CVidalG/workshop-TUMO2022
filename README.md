@@ -16,6 +16,6 @@ In partnership with the [Fundamental Scientific Library of the National Academy 
 
 ## Week 2: Semantic classification of Documents and pictures
 
-**Goal**: Introduction to multi-classes problems with Mask-RCNN and different use cases, with heritage and street views materials.
+**Goal**: Introduction to multi-class problems with Mask-RCNN and different use cases, with heritage and street views materials.
 
 Full instructions: see [week 2](week2/README.md).
