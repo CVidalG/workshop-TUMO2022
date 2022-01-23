@@ -157,3 +157,8 @@ and launch the following notebook:
 ```
 Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_model.ipynb
 ```
+
+Example of results:
+<p align="center">
+<img src="assets/prediction_example.png" style="width: 70%;" alt="annotation process" class="inline"/>
+</p>
