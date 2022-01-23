@@ -2,17 +2,17 @@
 
 # Table of contents
 
-1. [Installation](#installation)
+1. [Installation (TUMO-train)](#installation)
 
 2. [Building a custom dataset](#dataset)
 
 3. [Understand the impact of hyper-parameters](#parameters)
 
-4. [Data Visualization](#visualization)
+4. [Data Visualization (TUMO-pred)](#visualization)
 
-5. [Training](#training)
+5. [Training (TUMO-train)](#training)
 
-6. [Prediction](#prediction)
+6. [Prediction (TUMO-pred)](#prediction)
 
 ## Installation<a name="installation"></a>
 
@@ -23,7 +23,7 @@
 git clone https://github.com/CVidalG/workshop-TUMO2022.git
 ```
 
-### Create an environment and install Mask-RCNN
+### Create an environment and install Mask-RCNN  (TUMO-train)
 
 ```bash
 conda create --name TUMO-train python=3.6
@@ -89,7 +89,7 @@ Challenge **level 2** : [Access to the challenge](http://playground.tensorflow.o
 Challenge **level 3** : [Access to the challenge](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=xor&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=&seed=0.38987&showTestData=false&discretize=false&percTrainData=50&x=false&y=false&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
 
 
-## Data Visualization<a name="visualization"></a>
+## Data Visualization (TUMO-pred)<a name="visualization"></a>
 
 We are in the ```Mask-RCNN-TF2-3.0``` folder.
 
@@ -123,15 +123,21 @@ pip install scikit-image==0.14.2
 **Then restart your jupyter notebook**.
 
 
-## Training<a name="training"></a>
+## Training (TUMO-train)<a name="training"></a>
+
+```bash
+conda activate TUMO-train
+```
+
+and
 
 ```bash
 cd Mask-RCNN-TF2-3.0/samples/newspapers
-python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
+python3 newspapers.py train --dataset=/absolute/path/to/dataset --weights=coco
 ```
 
 
-## Prediction<a name="prediction"></a>
+## Prediction (TUMO-pred)<a name="prediction"></a>
 
 
 ```bash
