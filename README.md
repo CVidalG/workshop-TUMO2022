@@ -13,3 +13,9 @@ This Git contains main code and tasks for the TUMO workshop "Analyzing Armenian 
 Full instructions: see [week 1](week1/README.md).
 
 In partnership with the [Fundamental Scientific Library of the National Academy of Sciences of the Republic of Armenia](https://www.flib.sci.am/index.php/en/knowledge/).
+
+## Week 2: Semantic classification of Documents and pictures
+
+**Goal**: Introduction to multi-classes problems with Mask-RCNN and different use cases, with heritage and street views materials.
+
+Full instructions: see [week 2](week2/README.md).
