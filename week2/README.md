@@ -2,19 +2,31 @@
 
 # Table of contents
 
-## Just for fun: Apply your last newspaper model to a street view image
+1. [Just for fun](#bonus)
+
+2. [Task 1 - Introduction to a multi-class problem](#task1)
+
+    1. [Building a custom dataset](#dataset)
+
+    2. [Training (TUMO-train)](#training)
+
+3. [Task 2 - To come](#task2)
+
+
+
+## 1. Just for fun - Apply your last newspaper model to a street view image <a name="bonus"></a>
 
 ```bash
 conda activate TUMO-pred
 jupyter notebook
 ```
 
-And use the notebook ```inspect_newspapers_model.ipynb``` we have use during week1 to run your last model on new images.
+And use the notebook ```inspect_newspapers_model.ipynb``` we have use during week1 to run your last model on new images (it's in Mask-RCNN-TF2-3.0/samples/newspapers).
 
-> What do you think about the results ?
+> What do you think about the results?
 
 
-## Task 1: Introduction to a multi-class problem
+## 2. Task 1 - Introduction to a multi-class problem<a name="task1"></a>
 
 <p align="center">
 <img src="assets/lesson-general-support-week2.jpeg" width="80%"/>
@@ -84,4 +96,4 @@ conda install -c conda-forge opencv
 pip install pycocotools
 
 
-## Task 2: To come
+## 3. Task 2 - To come<a name="task2"></a>
