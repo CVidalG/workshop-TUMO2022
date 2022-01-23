@@ -2,9 +2,16 @@
 
 # Table of contents
 
-## Task 0: Apply your last newspaper model to a street view image
+## Just for fun: Apply your last newspaper model to a street view image
 
+```bash
+conda activate TUMO-pred
+jupyter notebook
+```
 
+And use the notebook ```inspect_newspapers_model.ipynb``` we have use during week1 to run your last model on new images.
+
+> What do you think about the results ?
 
 
 ## Task 1: Introduction to a multi-class problem
@@ -26,6 +33,7 @@ You can use data of your choice (images from internet, images from the [Fundamen
 4. Annotate images with the objects of your choice, with the **polygon** function.
 
 **For annotating your dataset, we will use our [annotator tool v2.0.11](../annotator).**
+
 
 5. Export annotations as json and save the json file into each folder (train, val, test) with the name ```via_region_data```.
 
