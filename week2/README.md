@@ -14,5 +14,66 @@
 </p>
 
 
+### Building a custom dataset<a name="dataset"></a>
+
+The first step consists in building a customized dataset with at least two different objects to recognize (up to 4).
+
+You can use data of your choice (images from internet, images from the [Fundamental Scientific Library of the National Academy of Sciences of the Republic of Armenia](https://www.flib.sci.am/index.php/en/knowledge/), or you can also use the **dataset we provide in the folder week2 of this Git**.
+
+1. Download your images in a folder ```my_dataset_week2```.
+2. Resize images to a height of 1000px.
+3. Split into 3 folders (train, val, test).
+4. Annotate images with the objects of your choice, with the **polygon** function.
+
+**For annotating your dataset, we will use our [annotator tool v2.0.11](../annotator).**
+
+5. Export annotations as json and save the json file into each folder (train, val, test) with the name ```via_region_data```.
+
+
+### Training (TUMO-train)<a name="training"></a>
+
+```bash
+conda activate TUMO-train
+```
+
+Open the file:
+```
+Mask-RCNN-TF2-3.0/samples/custom/custom.py
+```
+
+Update the classes according to your dataset:
+
+```line 85```: add as much classes as necessary, with the name you have used during your annotation.
+```python
+self.add_class("object", 1, "name1") #for instance : name = car
+self.add_class("object", 2, "name2") #for instance : name = people
+#self.add_class("object", 3, "name3") #uncomment if you have more than 2 classes
+#self.add_class("object", 4, "name4") #uncomment if you have more than 3 classes
+```
+
+and around ```line 124```, add correct informations:
+```python
+name_dict = {"name1": 1, "name2": 2} #if you have more than 2 classes, don't forget to add name3 and name4
+```
+
+And finally, you can launch training:
+
+```bash
+cd Mask-RCNN-TF2-3.0/samples/custom
+python3 custom.py train --dataset=/absolute/path/to/your/dataset --weights=coco
+```
+
+In case of errors:
+
+```bash
+conda install -c conda-forge opencv 
+```
+
+
+
+
+
+pip install pycocotools
+
 
 ## Task 2: To come
