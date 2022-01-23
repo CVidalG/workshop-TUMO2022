@@ -21,7 +21,6 @@
 
 ```bash
 git clone https://github.com/CVidalG/workshop-TUMO2022.git
-cd week1
 ```
 
 ### Create an environment and install Mask-RCNN
@@ -92,43 +91,51 @@ Challenge **level 3** : [Access to the challenge](http://playground.tensorflow.o
 
 ## Data Visualization<a name="visualization"></a>
 
-We are in the ```week1/Mask-RCNN-TF2-3.0``` folder.
+We are in the ```Mask-RCNN-TF2-3.0``` folder.
 
 ```bash
 conda create --name TUMO-pred python=3.7
 conda activate TUMO-pred
 pip install -r requirements.txt
 python3 setup.py install
-python -m pip install Keras==2.3.1 tensorflow==2.1.0
-pip install scikit-image==0.14.2
 conda install -c conda-forge jupyterlab
 ```
 
-Start a JupyterNotebook:
+Start a Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-and launch :
+and launch the following notebook:
 
 ```
 Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_data-student.ipynb
 ```
 
+**In case of errors (missing libraries or tensorflow/keras conflicts), stop your jupyter and try:**
+
+```bash
+python -m pip install Keras==2.3.1 tensorflow==2.1.0
+pip install scikit-image==0.14.2
+````
+
+**Then restart your jupyter notebook**.
+
 
 ## Training<a name="training"></a>
 
 ```bash
-cd week1/Mask-RCNN-TF2-3.0/samples/newspapers
+cd Mask-RCNN-TF2-3.0/samples/newspapers
 python3 newspapers.py train --dataset=/path/to/dataset --weights=coco
 ```
 
 
 ## Prediction<a name="prediction"></a>
 
-```
-activate your TUMO-pred environment
+
+```bash
+conda activate TUMO-pred
 ```
 
 Start a JupyterNotebook:
@@ -137,7 +144,7 @@ Start a JupyterNotebook:
 jupyter notebook
 ```
 
-and launch :
+and launch the following notebook:
 
 ```
 Mask-RCNN-TF2-3.0/samples/newspapers/inspect_newspapers_model.ipynb
