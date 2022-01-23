@@ -10,6 +10,8 @@
 
     2. [Training (TUMO-train)](#training)
 
+    3. [Prediction (TUMO-pred)](#prediction)
+
 3. [Task 2 - To come](#task2)
 
 
@@ -90,10 +92,15 @@ conda install -c conda-forge opencv
 ```
 
 
+### Prediction (TUMO-pred)<a name="prediction"></a>
 
-
-
+```bash
+conda activate TUMO-pred
 pip install pycocotools
+jupyter notebook
+```
+
+And open the notebook ```custom_model.ipynb``` (Mask-RCNN-TF2-3.0/samples/custom).
 
 
 ## 3. Task 2 - To come<a name="task2"></a>
