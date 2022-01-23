@@ -70,7 +70,9 @@ You can use Automator to create a converter img2img, or you can also use imagema
 For annotating your dataset, we will use our [annotator tool v1.0.6](../annotator).
 Please annotate each subset independently.
 
+<p align="center">
 <img src="../assets/annotation.gif" style="width: 80%;" alt="annotation process" class="inline"/>
+</p>
 
 ## Understand the impact of hyper-parameters<a name="parameters"></a>
 
@@ -88,8 +90,9 @@ Challenge **level 2** : [Access to the challenge](http://playground.tensorflow.o
 
 Challenge **level 3** : [Access to the challenge](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=xor&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=&seed=0.38987&showTestData=false&discretize=false&percTrainData=50&x=false&y=false&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
 
+<p align="center">
 <img src="../assets/playground.png" style="width: 80%;" alt="playground tensorflow" class="inline"/>
-
+</p>
 
 ## Data Visualization (TUMO-pred)<a name="visualization"></a>
 
