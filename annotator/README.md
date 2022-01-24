@@ -2,7 +2,7 @@
 
 We will use the [VGG Image Annotator (VIA)](https://www.robots.ox.ac.uk/~vgg/software/via/).
 
-Please use the via-1.0.6.html file.
+Please use the via-2.0.11.html file.
 
 ```bash
 open via-2.0.11.html
