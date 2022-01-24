@@ -23,7 +23,7 @@ conda activate TUMO-pred
 jupyter notebook
 ```
 
-And use the notebook ```inspect_newspapers_model.ipynb``` we have use during week1 to run your last model on new images (it's in Mask-RCNN-TF2-3.0/samples/newspapers).
+And use the notebook ```demo.ipynb```, similar to the one we have use during week1 to run your last model on new images (it's in Mask-RCNN-TF2-3.0/samples/).
 
 > What do you think about the results?
 
