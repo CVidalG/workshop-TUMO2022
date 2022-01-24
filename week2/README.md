@@ -39,7 +39,12 @@ And use the notebook ```inspect_newspapers_model.ipynb``` we have use during wee
 
 The first step consists in building a customized dataset with at least two different objects to recognize (up to 4).
 
-You can use data of your choice (images from internet, images from the [Fundamental Scientific Library of the National Academy of Sciences of the Republic of Armenia](https://www.flib.sci.am/index.php/en/knowledge/), or you can also use the **dataset we provide in the folder week2 of this Git**.
+You can use data of your choice (images from internet, images from the [Fundamental Scientific Library of the National Academy of Sciences of the Republic of Armenia](https://www.flib.sci.am/index.php/en/knowledge/), or you can also use the **dataset we provide below**.
+
+===========
+Google Drive with some data : [access to Data](https://drive.google.com/drive/folders/1HtCaCthql443kRR-bAD2RjarF7wHqSst?usp=sharing)
+===========
+
 
 1. Download your images in a folder ```my_dataset_week2```.
 2. Resize images to a height of 1000px.
