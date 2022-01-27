@@ -128,7 +128,7 @@ const links = [];
 images.forEach(({children}) => {
   const image = children[0]
   
-  if (image.textContent) return names.push(image.textContent);
+  if (image.textContent) return names.push(image.textContent.replace("\n", ""));
 
   links.push(image.src)
 })
