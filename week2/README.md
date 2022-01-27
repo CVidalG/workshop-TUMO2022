@@ -116,3 +116,26 @@ And open the notebook ```custom_model.ipynb``` (Mask-RCNN-TF2-3.0/samples/custom
 We are working with:
 **TUMO-pred** and **demo.ipynb**
 
+To create GIF file, add in your notebook demo :
+
+```python
+import glob
+from PIL import Image
+def make_gif(frame_folder):
+    frames = [Image.open(image) for image in glob.glob(f"{frame_folder}/*.png")]
+    frame_one = frames[0]
+    frame_one.save("my_awesome.gif", format="GIF", append_images=frames,
+               save_all=True, duration=600, loop=0)
+```
+
+and then run :
+
+```python
+make_gif("/video/output/path/with/your/predicted/images")
+```
+
+If doesn't work, install Pillow in TUMO-pred:
+
+```bash
+python3 -m pip install Pillow
+```
