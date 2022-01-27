@@ -116,6 +116,36 @@ And open the notebook ```custom_model.ipynb``` (Mask-RCNN-TF2-3.0/samples/custom
 We are working with:
 **TUMO-pred** and **demo.ipynb**
 
+To download all images from Notebook, please follow the solution of Andranik:
+
+> By tednaaa, follow me in github [tednaaa](https://github.com/tednaaa)
+
+```js
+const images = document.querySelectorAll('.output_subarea');
+const names = [];
+const links = [];
+
+images.forEach(({children}) => {
+  const image = children[0]
+  
+  if (image.textContent) return names.push(image.textContent);
+
+  links.push(image.src)
+})
+
+const correctNames = names.splice(4, names.length)
+
+links.forEach((link, index) => {
+  const name = correctNames[index]
+  const linkElement = document.createElement('a')
+  linkElement.download = name
+  linkElement.href = link
+  document.body.appendChild(linkElement)
+  linkElement.click()
+})
+```
+
+
 To create GIF file, add in your notebook demo :
 
 ```python
@@ -139,3 +169,5 @@ If doesn't work, install Pillow in TUMO-pred:
 ```bash
 python3 -m pip install Pillow
 ```
+
+
