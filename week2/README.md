@@ -12,7 +12,7 @@
 
     3. [Prediction (TUMO-pred)](#prediction)
 
-3. [Task 2 - To come](#task2)
+3. [Task 2 - Live Demo and Video detection](#task2)
 
 
 
@@ -108,4 +108,11 @@ jupyter notebook
 And open the notebook ```custom_model.ipynb``` (Mask-RCNN-TF2-3.0/samples/custom).
 
 
-## 3. Task 2 - To come<a name="task2"></a>
+## 3. Task 2 - Live Demo and Video detection<a name="task2"></a>
+
+
+**Choose some newspapers and street views**
+
+We are working with:
+**TUMO-pred** and **demo.ipynb**
+
